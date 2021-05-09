@@ -1,3 +1,4 @@
+require "sinatra/activerecord"
 require 'sinatra/base'
 require 'sinatra/flash'
 
