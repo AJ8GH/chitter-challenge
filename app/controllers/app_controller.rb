@@ -4,8 +4,8 @@ class Chitter < Sinatra::Base
   configure do
     register Sinatra::Flash, Sinatra::ActiveRecordExtension
     enable :sessions, :method_override
-    set :root, File.dirname(File.expand_path('..', __FILE__))
-    set :public_folder, Proc.new { File.join(root, '../public') }
+    set :root, File.dirname(File.expand_path(__dir__))
+    set :public_folder, (Proc.new { File.join(root, '../public') })
     set :session_secret, ENV['SESSION_SECRET']
     set :database, {
       adapter: 'postgresql',

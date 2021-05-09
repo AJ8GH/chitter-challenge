@@ -1,5 +1,6 @@
 require 'pg'
 require 'rake'
+require 'sinatra/activerecord/rake'
 
 require_relative 'app/lib/database_connection'
 

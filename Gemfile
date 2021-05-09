@@ -9,8 +9,8 @@ group :development, :production do
   gem 'puma'
   gem 'rack'
   gem 'sinatra'
-  gem 'sinatra-flash'
   gem 'sinatra-activerecord'
+  gem 'sinatra-flash'
 end
 
 group :test, :development, :production do
